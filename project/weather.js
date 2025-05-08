@@ -1,9 +1,8 @@
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
-  for(let n of data){
-    console.log(n.coord);
-  }
+  console.log(data.coord[0]);
+  console.log(data.coord[1]);
   console.log(weather[0].description);
   console.log(mani.temp_min);
   console.log(main.temp_max);
