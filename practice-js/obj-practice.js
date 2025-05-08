@@ -17,15 +17,11 @@ let gakka = [
 //////////////// ここから下にプログラムを書きたそう!
 
 console.log(campus.address);
-console.log(campus.buildingD[0]); 
-console.log(campus.buildingD[1]);
-console.log(campus.buildingD[2]);
-console.log(campus.buildingD[3]);
-console.log(campus.buildingD[4]);
-console.log(campus.buildingD[5]);
-console.log(campus.buildingD[6]);
-console.log(campus.buildingD[7]);
-console.log(gakka[0].name);
-console.log(gakka[1].name);
-console.log(gakka[2].name);
-console.log(gakka[3].name);
+
+for(let n of campus.buildingD){
+	console.log(n);
+}
+
+for(let n of gakka){
+	console.log(n.name);
+}
