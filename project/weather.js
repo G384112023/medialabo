@@ -4,13 +4,13 @@ function print(data) {
   for(let n of data){
     console.log(n.coord);
   }
-  console.log(data.weather[0].description);
-  console.log(data.mani.temp_min);
-  console.log(data.main.temp_max);
-  console.log(data.main.humidity);
-  console.log(data.wind.speed);
-  console.log(data.wind.deg);
-  console.log(data.name);
+  console.log(weather[0].description);
+  console.log(mani.temp_min);
+  console.log(main.temp_max);
+  console.log(main.humidity);
+  console.log(wind.speed);
+  console.log(wind.deg);
+  console.log(name);
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
