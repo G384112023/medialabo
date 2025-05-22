@@ -12,9 +12,15 @@ function print(data) {
   console.log(data.name);
 }
 
+function print(weather) {
+}
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
-
+  let result = document.createElement('div');
+  let body = document.querySelector('body');
+  body = insertAdjacentElement('beforeend', result);
+  let p = document.createElement('p');
 }
 
 // 課題5-1 のイベントハンドラの定義
@@ -98,3 +104,11 @@ let data = {
   "cod": 200
 };
 
+let weather = {
+  id:{
+
+  }
+}
+
+let b = document.querySelector('button#print');
+b.addEventListener('click', print(weather));
