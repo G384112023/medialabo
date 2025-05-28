@@ -19,8 +19,34 @@ function print(weather) {
 function printDom(data) {
   let result = document.createElement('div');
   let body = document.querySelector('body');
-  body = insertAdjacentElement('beforeend', result);
+  body.insertAdjacentElement('beforeend', result);
   let p = document.createElement('p');
+  p.textContent = (data.coord.lon);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.coord.lat);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.weather[0].description);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.main.temp_min);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.main.temp_max);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.main.humidity);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.wind.speed);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.wind.deg);
+  result.insertAdjacentElement('beforeend', p);
+  p = document.createElement('p');
+  p.textContent = (data.name);
+  result.insertAdjacentElement('beforeend', p);
 }
 
 // 課題5-1 のイベントハンドラの定義
