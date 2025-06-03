@@ -4,12 +4,37 @@
     <meta charset="utf-8">
     <title>プロジェクト課題</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="project.js" defer></script>
   </head>
   <body>
     <header>世界の天気</header>
+    <div id="toshi">
+    <h3 id="h3">都市一覧</h3>
+    <div id="div1">
+      <div class="d">カイロ(Cairo)</div>
+      <div class="d">モスクワ(Moscow)</div>
+      <div class="d">ヨハネスブルグ(Johannesburg)</div>
+      <div class="d">北京(Beijing)</div>
+      <div class="d">東京(Tokyo)</div>
+      <div class="d">シンガポール(Singapore)</div>
+    </div>
+    <div id="div2">
+      <div class="d">シドニー(Sydney)</div>
+      <div class="d">ロンドン(London)</div>
+      <div class="d">パリ(Paris)</div>
+      <div class="d">リオデジャネイロ(Rio de Janeiro)</div>
+      <div class="d">ニューヨーク(New York)</div>
+      <div class="d">ロサンゼルス(Los Angeles)</div>
+    </div>
+    </div>
+
+    <div id="kensaku">
     <label for="city">都市を検索: </label>
-	  <input type="text" name="city" size="10" id="city">
-	  <button id="print">天気を見る</button>
+	  <input type="text" name="city" size="30" id="city">
+	  <button id="sendRequest">serch</button>
+    </div>
+    
+
   </body>
 </html>
