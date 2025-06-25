@@ -23,7 +23,7 @@ function hantei() {
   a.textContent = yoso;
   let r = document.querySelector('p#result');
   if(kaisu >= 4 || x === 1){
-    rasult = "答えは " + kotae + " でした. すでにゲームは終わっています";
+    result = "答えは " + kotae + " でした. すでにゲームは終わっています";
     r.textContent = result;
   }else if(yoso === kotae){
     result = "正解です. おめでとう！";
